@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script>
+        $(document).ready(function()
+        {
+            $("#one").append("helloworld :)");
+
+            $("h1").css("background-color","green");
+
+            $("#two").click(function(){
+                $("#two").hide(300);
+            })
+
+            $("#show").hide();
+
+            $("#btn1").click(function(){
+                $("#show").slideToggle(300,function(){
+                    $("#btn1").text("view less")
+                })
+            })
+            $("#toggledescription").hide()
+            $("#clickinfo").click(function(){
+                $("#toggledescription").fadeToggle()
+            })
+
+            $("#btn2").click(function(){
+                $("#d1").append("hello").css("background-color","yellow")
+            })
+
+            $("#b1").click(function(){
+                $("#d2").slideToggle("fast",function(){
+                    $("#b1").text("show");
+                })
+            })
+
+
+            $("").click(function(){
+                alert("your name"+$("form").text())
+            })
+            $("#01").click(function(){
+                alert("your name: "+$("#name").val())
+            })
+
+            $("#copy").click(function(){
+                var c = $("#column").attr("style");
+                $("#r2").attr("style",c);
+            })
+
+            $("#divzoom").mouseover(function(){
+                $("#image").animate({height:"270",width:"520"})
+            })
+
+            $("#divzoom").mouseout(function(){
+                $("#image").animate({height:"250",width:"500"})
+            })
+
+
+
+
+            
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+    <h1 >
+        Testing page
+    </h1>
+    <p id="one">appended text :</p>
+    <p id="two">tap to hide</p>displayed text
+
+    <p style=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea dolor aliquid mollitia temporibus. Suscipit perspiciatis cumque quisquam, magnam commodi earum totam, possimus inventore placeat illum eos ipsa modi eligendi!
+    Fugit, consequatur porro neque enim a maiores facilis, soluta voluptatibus suscipit possimus, dolorum architecto. Sit nihil voluptates soluta perferendis natus, animi maxime corrupti odio vero? Ut impedit ullam officiis expedita.
+    Deleniti dolorem delectus distinctio laborum nostrum vel fugiat aliquam nobis, iure laudantium dolore, totam, a quidem sapiente dicta perspiciatis. Eos doloremque reprehenderit eius impedit nihil quo atque minus dolores enim.
+    Nihil quas, molestiae itaque culpa dolorum minima dignissimos architecto et iusto delectus nesciunt assumenda earum officia facere illum, natus expedita laborum, distinctio vel? Dolores, soluta eaque! Voluptatibus at adipisci eaque?
+    Nostrum ratione aliquid nam recusandae repellat aperiam eius voluptate incidunt mollitia at! Distinctio nam quo impedit et sapiente. Quos rerum porro eaque recusandae ratione, nobis perspiciatis adipisci quasi. Quibusdam, at.
+    Tenetur placeat voluptatibus, voluptates earum velit iste modi. Voluptates nostrum obcaecati quisquam, minus reprehenderit deserunt laboriosam sequi eius soluta vitae harum recusandae nulla ducimus fugiat odio nihil quasi labore quidem.
+    Molestiae, veritatis iusto ipsum ipsam inventore voluptatem corporis iure quos sit laborum aut quam commodi obcaecati? Corporis ipsa quo sit nam sint, quidem nulla atque, molestiae at expedita provident enim.
+    Porro repudiandae dolore nisi in illo aliquid earum accusamus libero fugit quis, culpa saepe unde, similique eligendi. Et unde deleniti molestiae, inventore vitae ut laudantium porro, repellendus ipsum ducimus reprehenderit!
+    Nulla, magnam sit doloribus possimus eaque iure nam expedita, optio provident rerum porro molestias, nisi sed id ipsam maiores temporibus sint velit enim libero ullam voluptate atque minus repudiandae. Necessitatibus.
+    Rerum, quod nesciunt consequatur dicta ipsum incidunt rem soluta dignissimos repellendus pariatur ipsa libero id sapiente saepe labore ducimus quibusdam corporis? Totam cum quaerat ullam, nulla asperiores ea labore accusantium.</p>
+    <p></p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet excepturi, incidunt porro aliquid odio magni ipsam fuga ea ut nostrum minima impedit nobis voluptatibus numquam ullam iusto eos labore laboriosam.</p>
+
+    <button id="btn1" class="btn btn-primary"  >View More</button>
+    <div id="show">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repudiandae sunt officiis ab facilis iste, vel cum ipsam assumenda quia sint fugiat itaque culpa, dolorum laudantium exercitationem repellendus omnis ullam?
+        Laborum vitae, mollitia et nam fuga dolore quaerat expedita, aspernatur ex illo, cumque reiciendis facilis dolor eius unde tempora consequuntur fugiat nihil. Rem consequuntur dolorem ut optio sit aliquam distinctio.
+        Nulla inventore sunt unde nisi distinctio facere corrupti pariatur quam odio molestias ab reiciendis voluptas autem tenetur, accusamus repellat hic eveniet vitae tempora dicta impedit consequatur omnis blanditiis ullam? Eveniet!
+        Eos adipisci, quasi maxime enim nostrum ab veritatis iure reiciendis ipsam provident quos, dolorem impedit doloribus porro est molestias voluptates exercitationem dolorum possimus quisquam vitae. Provident eos perspiciatis placeat molestiae.
+        Quisquam minima eum dolorum veritatis quaerat reprehenderit adipisci, explicabo laboriosam, inventore eaque quo magnam. Accusamus sit consectetur molestias, illo quod eum. Ex maxime magnam eligendi animi libero iste odit dolore.
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dignissimos nulla, excepturi accusantium quos obcaecati fuga aliquam repellat, illo vero quae a quam voluptatum sint illum sunt similique exercitationem iure!
+        Nam earum aliquid, perspiciatis corporis sint eligendi ex molestiae quae maxime placeat atque alias ducimus nesciunt similique officia magnam error, facilis natus neque eveniet culpa vel? Debitis aperiam magni tempore!
+        Architecto quas impedit tempore delectus facilis! Labore nemo aliquid a doloribus iste accusantium atque quisquam dolorum consequuntur maxime id modi dolor, non voluptas enim delectus commodi illum. Temporibus, quo consequuntur!
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quis, labore beatae iusto totam distinctio. Aliquam iste consequuntur quas libero iusto, at officiis quaerat ullam quam eos cumque illo eius!
+        Facilis illo explicabo praesentium, adipisci eos optio corporis ratione iusto dolorum fugiat, fuga, sit quidem. Adipisci earum possimus aliquam quis, dolore iure recusandae, tempora dolores fugit libero, ab deserunt magni?
+    </div>
+
+    <div style="background-color: grey;" id="clickinfo" class="rounded">
+    Click to get info of the website</div>
+    <div style="background-color: rgb(210, 206, 206);" id="toggledescription" class="rounded">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repudiandae sunt officiis ab facilis iste, vel cum ipsam assumenda quia sint fugiat itaque culpa, dolorum laudantium exercitationem repellendus omnis ullam?
+        Laborum vitae, mollitia et nam fuga dolore quaerat expedita, aspernatur ex illo, cumque reiciendis facilis dolor eius unde tempora consequuntur fugiat nihil. Rem consequuntur dolorem ut optio sit aliquam distinctio.
+        Nulla inventore sunt unde nisi distinctio facere corrupti pariatur quam odio molestias ab reiciendis voluptas autem tenetur, accusamus repellat hic eveniet vitae tempora dicta impedit consequatur omnis blanditiis ullam? Eveniet!
+        Eos adipisci, quasi maxime enim nostrum ab veritatis iure reiciendis ipsam provident quos, dolorem impedit doloribus porro est molestias voluptates exercitationem dolorum possimus quisquam vitae. Provident eos perspiciatis placeat molestiae.
+        Quisquam minima eum dolorum veritatis quaerat reprehenderit adipisci, explicabo laboriosam, inventore eaque quo magnam. Accusamus sit consectetur molestias, illo quod eum. Ex maxime magnam eligendi animi libero iste odit dolore.</div>
+    
+    <div id="d1">
+        
+    </div><br>
+    <button id="btn2" class="btn btn-outline-dark">Magic</button>
+
+    <div id="d2">
+            hmmmmmm
+    </div>
+
+    <button id="b1" class="btn btn-primary">
+        hide
+    </button>
+
+    <form>
+        jadu jadu
+        <input type="text" class="form-control" id="name">
+        <button class="btn btn-outline-danger" id="01">click</button>
+    </form>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+            <th>
+                col1
+            </th>
+            <th>
+                col2
+            </th>
+            <th>
+                col3
+            </th>
+        </thead>
+        <tr id="paste">
+            <td style="background-color: yellow;" id="column">
+                row1
+            </td>
+            <td>
+                row1
+            </td>
+            <td>
+                row1
+            </td>
+        </tr>
+        <tr>
+            <td id="r2">
+                row2
+            </td>
+            <td>
+                row2
+            </td>
+            <td>
+                row2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                row3
+            </td>
+            <td>
+                row3
+            </td>
+            <td>
+                row3
+            </td>
+        </tr>
+    </table>
+    <button class="btn btn-outline-warning" id="copy">copy</button>
+
+    <div id="divzoom">
+        <img src="https://assets-global.website-files.com/6440a62ad0addedfa9c2db95/6440ddfc96d2a5af1c8121fc_Blog%2015.jpg" id="image" height="250" width="500">
+    </div>
+
+
+
+
+
+</div>
+</body>
+</html>

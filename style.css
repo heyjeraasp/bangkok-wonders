@@ -1,0 +1,79 @@
+#titleOfPage
+{
+    font-family: Roboto Condensed, sans-serif;
+    text-align : center ;
+     padding-top : 3% ;
+}
+
+#h31
+{
+    padding-top : 30% ;  
+}
+
+#p1
+{
+    padding-left : 6% ;
+     display: none;
+}
+
+#btn1
+{
+    padding-left : 6% ; 
+}
+
+#h32
+{
+    padding-top : 3% ; 
+}
+
+#div1
+{
+    padding-right: 10%;
+}
+
+#h33
+{
+    padding-top : 3% ; 
+}
+
+#attractions
+{
+    font-family: Roboto Condensed, sans-serif;
+}
+
+#food
+{
+    font-family: Roboto Condensed, sans-serif;
+}
+
+#takeemail
+{
+    background-color: rgb(234, 236, 239);
+    height: 200px;
+    width: 50%;
+    margin-left: 350px;
+    padding-bottom: 23%;
+    
+    
+}
+
+#emailtitle
+{
+    padding-left : 20% ; 
+    padding-top : 6% ; 
+    font-family: Roboto Condensed, sans-serif;
+    
+}
+
+#signupdiv{
+    padding-left : 20% ;
+    }
+
+#signup{
+    color: rgb(88, 91, 93);
+}
+
+
+
+
+
